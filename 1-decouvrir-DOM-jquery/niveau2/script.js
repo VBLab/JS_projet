@@ -1,5 +1,5 @@
 var listOfMovie = [];
-$(document).ready(function(){// completer le code ici
+$(document).ready(function(){      // completer le code ici
     $("button").click(function(){
         $("#list ul").empty();
         listOfMovie = [];
@@ -10,12 +10,12 @@ $(document).ready(function(){// completer le code ici
         });
     });
 });
-function htmlDivElement(name){// completer le code ici
-    return `<div class ='divFilm'>${name}</div>`;
+function htmlDivElement(name){          // completer le code ici
+    return `<div class ='divFilm'>${name}</div>`; // retourne le nom du film
 }
  
-function splitFile(data){// completer le code ici
-    return data.split('\n');
+function splitFile(data){           // completer le code ici
+    return data.split('\n');        // renvoie les résultats du tableau parcouru
 }
 
 
