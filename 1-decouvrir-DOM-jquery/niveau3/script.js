@@ -6,9 +6,9 @@ $(document).ready(function(){
     $.get('./playlist.txt', function(data){ // va chercher la liste de films (fichier txt), affiche dans un tableau
       var splited = splitFile(data)
         $.each(splited, function(index,movie){
-          var i = movie[0];
-          var n = movie[1];
-          var d = movie[2];
+          var i = movie[0];//index
+          var n = movie[1];//name
+          var d = movie[2];//durée
           var movieobjet = createMovie(i,n,d);
             $('#list ul').append(htmlDivElement(movieobjet));
         });
